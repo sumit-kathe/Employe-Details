@@ -20,6 +20,24 @@ export type initialtype =[{
 
 }]
 
+export const initialstatevalue:initialtype=[{
+
+    firstName:"",
+    lastName:"",
+    domain:"",
+    position:"",
+    exp:0,
+    email:"",
+    ctc:0,
+    country:"",
+    id:0,
+    date:"",
+
+
+
+
+}]
+
 export const initialstate:initialtype=[{
 
     firstName:"",

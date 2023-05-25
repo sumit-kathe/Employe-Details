@@ -1,10 +1,10 @@
 import { createContext, useEffect, useReducer, useState } from "react";
-import { initialstate,initialtype } from "../store/reducerstore";
+import { initialstatevalue,initialtype,initialstate } from "../store/reducerstore";
 
 
 const Employedetailcontax = createContext({
 
-employe: initialstate
+employe: initialstate,
 
 
 
@@ -18,7 +18,7 @@ employe: initialstate
 
 export const  Employedatacontaxwraper:React.FC<any>=({children})=>{
 
-    const [allemp,setAllemp]=useState<initialtype>();
+    const [allemp,setAllemp]=useState<any>();
     const getempdata=async()=>{
     
     try{
@@ -58,14 +58,16 @@ export const  Employedatacontaxwraper:React.FC<any>=({children})=>{
 const reducerfun:any=()=>{
     return(<></>)}
 
-const [currentemp,dispatch]=useReducer(reducerfun,initialstate)
+    // const initialstatevalue=allemp;
+
+const [currentemp,dispatch]=useReducer(reducerfun,initialstatevalue)
 
 return(
 <Employedetailcontax.Provider value={
 
     {
         
-   employe: allemp,
+        employe: allemp,
               
     }
 }>
