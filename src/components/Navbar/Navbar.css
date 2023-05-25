@@ -1,0 +1,38 @@
+
+.maindiv{
+
+
+    display:flex;
+    gap:20px;
+
+    background-color: black;
+
+    color: rgb(232, 240, 240);
+
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.singlediv{
+
+    padding: 18px;
+    text-decoration: none;
+    
+}
+
+.active-class{
+
+    background-color: aqua;
+    font-size: 22;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.normal{
+
+    color:white;
+    text-decoration: none;
+}
