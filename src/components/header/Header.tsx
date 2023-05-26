@@ -5,6 +5,7 @@ import User from "../User/User";
 import Navbar from "../Navbar/Navbar";
 import Edit from "../edit/Edit";
 import View from "../View/View";
+import Form from "../Form/Form";
 
 
 const Header =()=>{
@@ -21,6 +22,8 @@ const Header =()=>{
 <Route path="/Edit" element={<Edit></Edit>}/>
 
 <Route path="/View" element={<View></View>}/>
+
+<Route path="/form" element={<Form></Form>}/>
 
 
 

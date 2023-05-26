@@ -51,7 +51,14 @@ const User = () => {
     <>
       <div className="bodyy">
         <div>
-          <button className="btn">ADD New Employe</button>
+          <button className="btn"><NavLink
+                className={({ isActive }) => {
+                  return isActive ? "active-class" : "normal";
+                }}
+                to="/form"
+              >
+                Add New Empoloye
+              </NavLink></button>
         </div>
 
         <div>
